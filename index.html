@@ -1,1 +1,390 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía - Asistente de Tareas Diarias</title>
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #2ecc71;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin: 25px 0 15px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 8px;
+        }
+        
+        h3 {
+            color: var(--secondary);
+            margin: 20px 0 10px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: var(--shadow);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature {
+            background: var(--light);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .tech-item {
+            background: var(--light);
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: var(--dark);
+        }
+        
+        .screenshot {
+            width: 100%;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .code-sample {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: monospace;
+        }
+        
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .member {
+            text-align: center;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: var(--dark);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Asistente de Tareas Diarias con Priorización Automática</h1>
+            <p>Un gestor académico integral para la organización de tareas y horarios de clases</p>
+        </header>
+        
+        <div class="card">
+            <h2>Resumen del Proyecto</h2>
+            <p>Este proyecto consiste en una aplicación desarrollada en Python con PyQt5 que permite a los estudiantes gestionar sus tareas académicas y horarios de clase de manera integrada. El sistema ofrece una interfaz intuitiva para registrar tareas con diferentes niveles de prioridad, organizar el horario semanal de clases y visualizar todos los compromisos en un calendario unificado.</p>
+            
+            <div class="grid">
+                <div class="feature">
+                    <h3>Objetivo Principal</h3>
+                    <p>Centralizar la gestión académica en una sola herramienta que permita a los estudiantes organizar eficientemente sus tareas, fechas de entrega y horarios de clase.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>Problema que Resuelve</h3>
+                    <p>Dificultades en la gestión académica que generan conflictos entre entregas de trabajos y clases programadas, causando retrasos y desorganización.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>Público Objetivo</h3>
+                    <p>Estudiantes universitarios que necesitan una herramienta integral para organizar sus actividades académicas y mejorar su productividad.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Tecnologías Utilizadas</h2>
+            
+            <h3>Lenguaje de Programación</h3>
+            <div class="tech-stack">
+                <div class="tech-item">Python</div>
+            </div>
+            
+            <h3>Librerías y Frameworks</h3>
+            <div class="tech-stack">
+                <div class="tech-item">PyQt5</div>
+                <div class="tech-item">QtCore</div>
+                <div class="tech-item">QtGui</div>
+                <div class="tech-item">QtWidgets</div>
+                <div class="tech-item">JSON</div>
+                <div class="tech-item">Datetime</div>
+                <div class="tech-item">OS</div>
+                <div class="tech-item">Sys</div>
+            </div>
+            
+            <h3>Características de Python</h3>
+            <ul>
+                <li>Lenguaje de alto nivel con sintaxis clara y fácil de comprender</li>
+                <li>Ampliamente utilizado en desarrollo web, automatización y computación científica</li>
+                <li>Ideal para principiantes y desarrolladores experimentados</li>
+                <li>Gran variedad de librerías disponibles</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Funcionalidades Principales</h2>
+            
+            <div class="grid">
+                <div class="feature">
+                    <h3>Gestión de Tareas</h3>
+                    <ul>
+                        <li>Registro de tareas con nombre, fecha y hora de entrega</li>
+                        <li>Asignación de niveles de prioridad (Baja, Media, Alta)</li>
+                        <li>Marcado de tareas completadas</li>
+                        <li>Filtrado por fecha, prioridad y estado de completado</li>
+                        <li>Ordenamiento automático por prioridad</li>
+                    </ul>
+                </div>
+                
+                <div class="feature">
+                    <h3>Gestión de Horario</h3>
+                    <ul>
+                        <li>Registro de clases con nombre, NRC, profesor y aula</li>
+                        <li>Asignación de días y horarios específicos</li>
+                        <li>Detección automática de conflictos de horario</li>
+                        <li>Visualización semanal en formato de tabla</li>
+                        <li>Asignación de colores para diferenciar materias</li>
+                    </ul>
+                </div>
+                
+                <div class="feature">
+                    <h3>Calendario Unificado</h3>
+                    <ul>
+                        <li>Visualización integrada de tareas y clases</li>
+                        <li>Resaltado de fechas con tareas pendientes</li>
+                        <li>Coloración según nivel de prioridad</li>
+                        <li>Navegación por fechas para ver eventos específicos</li>
+                    </ul>
+                </div>
+                
+                <div class="feature">
+                    <h3>Gestión de Usuarios</h3>
+                    <ul>
+                        <li>Sistema multi-usuario</li>
+                        <li>Creación y eliminación de perfiles</li>
+                        <li>Almacenamiento persistente de datos por usuario</li>
+                        <li>Datos guardados en archivos JSON</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Interfaz Gráfica</h2>
+            
+            <h3>Diseño con Pestañas</h3>
+            <p>La aplicación está organizada en tres pestañas principales para una navegación intuitiva:</p>
+            <ol>
+                <li><span class="highlight">Gestión de Tareas</span>: Para agregar, editar y eliminar tareas académicas</li>
+                <li><span class="highlight">Horario de Clases</span>: Para administrar el cronograma semanal de clases</li>
+                <li><span class="highlight">Calendario Unificado</span>: Para visualizar de manera integrada todos los compromisos</li>
+            </ol>
+            
+            <h3>Elementos de Interfaz</h3>
+            <ul>
+                <li>Formularios intuitivos para entrada de datos</li>
+                <li>Tablas interactivas para visualización de horarios</li>
+                <li>Calendario con resaltado de fechas importantes</li>
+                <li>Listas con elementos seleccionables y acciones contextuales</li>
+                <li>Cuadros de diálogo para confirmación de acciones</li>
+                <li>Sistema de alertas y mensajes de retroalimentación</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Estructura del Código</h2>
+            
+            <h3>Clases Principales</h3>
+            <ul>
+                <li><span class="highlight">TareaManager</span>: Clase principal que gestiona la ventana principal y coordina todas las funcionalidades</li>
+                <li><span class="highlight">EditarClaseDialog</span>: Diálogo para agregar o editar información de clases</li>
+                <li><span class="highlight">DetailedCaseDialog</span>: Diálogo para mostrar detalles completos de una clase</li>
+                <li><span class="highlight">LoginDialog</span>: Diálogo para selección, creación y eliminación de usuarios</li>
+            </ul>
+            
+            <h3>Métodos Importantes</h3>
+            <div class="code-sample">
+// Ejemplo de método para agregar tareas
+def agregar_tarea(self):
+    nombre = self.nombre_input.text().strip()
+    
+    if not nombre:
+        QMessageBox.warning(self, "Advertencia", 
+                           "Por favor, ingresa un nombre para la tarea.")
+        return
+        
+    # Obtener valores de importancia (1-3)
+    importancia_map = {"Baja": 1, "Media": 2, "Alta": 3}
+    importancia = importancia_map[self.importancia_combo.currentText()]
+    
+    # Obtener fechas y horas
+    fecha_entrega = self.fecha_entrega.date().toPyDate()
+    hora_entrega = self.entrega_time.time()
+    
+    # Crear objetos datetime
+    datetime_entrega = datetime.combine(fecha_entrega, 
+                                      time(hora_entrega.hour(), 
+                                      hora_entrega.minute()))
+            </div>
+            
+            <h3>Almacenamiento de Datos</h3>
+            <ul>
+                <li>Datos guardados en archivos JSON separados por usuario</li>
+                <li>Estructura modular para tareas y clases</li>
+                <li>Carga automática de datos al iniciar la aplicación</li>
+                <li>Guardado automático al cerrar la aplicación</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Equipo de Desarrollo</h2>
+            
+            <div class="team">
+                <div class="member">
+                    <h3>Casilla Mamani Ronaldo</h3>
+                    <p>Contribución: 100%</p>
+                </div>
+                
+                <div class="member">
+                    <h3>Llanos Chacmana Sergio David</h3>
+                    <p>Contribución: 100%</p>
+                </div>
+                
+                <div class="member">
+                    <h3>Merma Maxi Edison Alexis</h3>
+                    <p>Contribución: 100%</p>
+                </div>
+                
+                <div class="member">
+                    <h3>Quinta Quispe Katia Angela</h3>
+                    <p>Contribución: 100%</p>
+                </div>
+            </div>
+            
+            <h3>Docente</h3>
+            <p>HUGO ESPETIA HUAMANGA</p>
+        </div>
+        
+        <div class="card">
+            <h2>Conclusiones y Beneficios</h2>
+            
+            <h3>Ventajas del Sistema</h3>
+            <ul>
+                <li>Centralización de la información académica en una sola aplicación</li>
+                <li>Interfaz intuitiva que facilita la organización del tiempo</li>
+                <li>Detección automática de conflictos de horario</li>
+                <li>Sistema de priorización que ayuda a focalizar en tareas importantes</li>
+                <li>Visualización unificada que ofrece una perspectiva completa de los compromisos</li>
+            </ul>
+            
+            <h3>Logros de Aprendizaje</h3>
+            <ul>
+                <li>Desarrollo de habilidades en programación orientada a objetos</li>
+                <li>Manejo de estructuras de datos complejas</li>
+                <li>Diseño e implementación de interfaces gráficas modernas</li>
+                <li>Gestión de persistencia de datos con archivos JSON</li>
+                <li>Implementación de patrones de diseño como MVC</li>
+            </ul>
+            
+            <h3>Impacto Esperado</h3>
+            <p>Esta herramienta tiene el potencial de mejorar significativamente la productividad académica de los estudiantes, reducir el estrés por fechas de entrega olvidadas y optimizar la gestión del tiempo mediante una planificación visual y centralizada.</p>
+        </div>
+        
+        <footer>
+            <p>Proyecto desarrollado para el curso de Construcción de Software - Grupo Code4</p>
+            <p>NRC: 17205 - Año 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
